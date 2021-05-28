@@ -1,4 +1,4 @@
-# VPC for development using Typescript
+# VPC for Development enviornment using Typescript
 
 VPC for development using TypeScript with CDK.
 
