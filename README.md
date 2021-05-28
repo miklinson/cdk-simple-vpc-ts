@@ -7,9 +7,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 ## Deploy
 
 ```
-$ npm install -g aws-cdk
 $ npm install
-#This isn't strictly necessary with the AWS CDK—the Toolkit does it for you so you can't forget. But you can still build manually whenever you want to catch syntax and type errors.
 $ npm run build
 $ cdk deploy
 ```
