@@ -14,7 +14,7 @@ $ cdk deploy
 
 ## Settings
 
-Change the key-value pair (KVP) for specific settings in cdk.context.json
+Change the key-value pair (KVP) for specific settings in `cdk.context.json`
 
 ## Useful commands
 
