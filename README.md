@@ -12,6 +12,10 @@ $ npm run build
 $ cdk deploy
 ```
 
+## Settings
+
+Change the key-value pair (KVP) for specific settings in cdk.context.json
+
 ## Useful commands
 
  * `npm run build`   compile typescript to js
