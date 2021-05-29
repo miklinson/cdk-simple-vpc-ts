@@ -6,11 +6,15 @@ export class VpcDevStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
+    // Get the variables from cdk.context.json
+    const cidr = this.node.tryGetContext('cidr');
+    const maxAzs = this.node.tryGetContext('maxAzs');
+    const natGateways = this.node.tryGetContext('natGateways');
+    //Pass the variables instead of explicitly defining it
     const vpc = new ec2.Vpc(this, 'VPCDev', {
-      cidr: "10.100.0.0/16",
-      maxAzs: 2,
-      // limit the NAT Gateway to 1 to save cost
-      natGateways: 1,
+      cidr: cidr,
+      maxAzs: maxAzs,
+      natGateways: natGateways, //limit the NAT gateway to 1 for cost savings
       subnetConfiguration: [
         {
           // 'subnetType' controls Internet access, as described above.
