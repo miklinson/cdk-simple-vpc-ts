@@ -9,6 +9,8 @@ export class VpcDevStack extends cdk.Stack {
     const vpc = new ec2.Vpc(this, 'VPCDev', {
       cidr: "10.100.0.0/16",
       maxAzs: 2,
+      // limit the NAT Gateway to 1 to save cost
+      natGateways: 1,
       subnetConfiguration: [
         {
           // 'subnetType' controls Internet access, as described above.
