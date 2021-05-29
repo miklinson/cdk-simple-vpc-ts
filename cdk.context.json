@@ -1,5 +1,9 @@
 {
-    "cidr": "10.100.0.0/16",
-    "natGateways": "1",
-    "maxAzs": "1"
+    "vpc": {
+        "name": "VPCDev",
+        "cidr": "10.100.0.0/16",
+        "natGateways": "1",
+        "maxAzs": "1"
+    }
+    
 }
